@@ -1,5 +1,7 @@
 import streamlit as st
+import pandas as pd
 import joblib
+from sklearn.feature_extraction.text import CountVectorizer
 
 model = joblib.load('spam_classifier_model.pkl')
 vectorizer = joblib.load('vectorizer.pkl')
